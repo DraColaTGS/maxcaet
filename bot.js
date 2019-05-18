@@ -4,7 +4,7 @@ const client = new Discord.Client();
  
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setGame(`$help |$bc  `,'https://www.twitch.tv/zya2d_')
+    client.user.setGame(`-help |-bc  `,'https://www.twitch.tv/zya2d_')
     client.user.setStatus('ldle');
 });
 
@@ -17,8 +17,8 @@ if (message.content.startsWith(prefix + 'help')) { //DiamondCodes - [ X_KillerYT
     let pages = [`
 ***__وصف عن البوت__***
 **
-『$bc / لي ارسال برود كاسيت للكل  』
-『$obc/لي ارسال برود كاسيت للاونلاين 』
+『-bc / لي ارسال برود كاسيت للكل  』
+『-obc/لي ارسال برود كاسيت للاونلاين 』
   `
 ,`
    
@@ -76,7 +76,7 @@ client.on('message', message => {
 
 client.on("message", message => {
 
-const prefix = '$'
+const prefix = '-'
  
             if (message.content.startsWith(prefix + "bc")) {
                          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
@@ -93,7 +93,7 @@ const prefix = '$'
 
 client.on("message", message => {
  
- const prefix = '$'
+ const prefix = '-'
 
             if (message.content.startsWith(prefix + "obc")) {
                          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
